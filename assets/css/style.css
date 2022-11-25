@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navbar*/
+
+.navegador{
+    background-color: grey;
+    padding: 10px;
+    display: block;
+
+
+}
+
+.navegador > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    position: sticky;
+}
+
+.navegador > ul > li > a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;;
+    position: sticky;
+}
+.icono{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+}  
+a#id{
+    display:block;
+    border: none;
+    background: url(../img/mira.png) no-repeat bottom;
+    width: 1000px;
+    height: 100px;    
+}
+.icono-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    gap: 10px;
+    position: fixed;
+    padding-left: 80px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.icono-info > a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/*Encabezado*/
+
+.encabezado{
+    background-color: rgb(230, 100, 100);
+    background-size: cover;    
+
+}
+
+.encabezado-info{
+    justify-content: center;
+    text-align: center;
+}
+
+/*Main*/
+
+.contenido{
+    background-color: rgb(230, 100, 100);
+    text-align: center;
+}
+.contedio-presentation{
+    justify-content: center;
+
+}
+.subtitle{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.presentation__picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+}
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+    font-size: larger;
+    text-align: center;
+}
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about__img{
+    text-align: center;
+}
+.about__img--left{
+    text-align: left;   
+}
+
+.about__picture{
+    margin-top: 100px;
+    max-width: 120%;
+}
+
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: larger;
+}
