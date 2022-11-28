@@ -9,18 +9,47 @@
 .navegador{
     background-color: grey;
     padding: 10px;
-    display: block;
+    display: flow-root;
 
 
 }
+
 
 .navegador > ul {
-    list-style-type: none;
-    display: flex;
+
     justify-content: right;
-    position: sticky;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    outline: 2px solid #4e5551;
+    overflow: hidden;
+    transition: color 1s;
+
+}
+.navegador > ul :hover {
+    color: #090909;
 }
 
+.navegador > ul ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: -1;
+    width: 150%;
+    height: 100%;
+    background-color: #4e5551;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    transition: transform 1s;
+}
+.navegador > ul :hover::before {
+    transform: scaleX(1) skewX(35deg);
+}
+/***/
 .navegador > ul > li > a{
     display: block;
     padding: 20px;
@@ -34,10 +63,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: fixed;
+    position: absolute;
 }  
 a#id{
-    display:block;
+    display: block;
     border: none;
     background: url(../img/mira.png) no-repeat bottom;
     width: 1000px;
@@ -49,7 +78,7 @@ a#id{
     flex-wrap: wrap;
     color: white;
     gap: 10px;
-    position: fixed;
+    position: absolute;
     padding-left: 80px;
     padding-top: 5px;
     font-size: 20px;
@@ -66,6 +95,11 @@ a#id{
 .encabezado{
     background-color: rgb(230, 100, 100);
     background-size: cover;    
+    background-image: url(https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2013/01/50f55ad4dea91_1200.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 70%;
+    color: rgb(14, 82, 76);
 
 }
 
@@ -77,8 +111,9 @@ a#id{
 /*Main*/
 
 .contenido{
-    background-color: rgb(230, 100, 100);
+    
     text-align: center;
+    background-color: rgb(230, 100, 100);
 }
 .contedio-presentation{
     justify-content: center;
