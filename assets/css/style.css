@@ -267,6 +267,22 @@ a#id{
     background-attachment: fixed;
     background-size: 100% 100%;
   }
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:55.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+  
+    top: 10%;
+    right: 25%;
+    height:75%;
+    width:50%;
+    position:absolute;
+
+}
 /* Contactos*/
 .wrapper{
     width:3000px;
