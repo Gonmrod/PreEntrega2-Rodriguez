@@ -112,19 +112,40 @@ a#id{
 
 .contenido{
     
+
+    
     text-align: center;
     background-color: rgb(230, 100, 100);
 
 }
-.contenido>h1{
+
+.contenido-contacto{
+
+        background-image: url(https://www.turismoentrerios.com/mariagrande/img/interlagos-2.jpg);
+        background-size:cover;
+        height: 100vh;
+        width: 100%;
+        position: relative;
     
+}
+.contenido-tiempo{
+
+    background-image: url(https://media.viajando.travel/p/d495a965df54a3aeb0940becc45c0540/adjuntos/236/imagenes/000/454/0000454103/entre-rios-victoriajpg.jpg://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2013/01/50f55ad4dea91_1200.jpg);
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+    
+.contenido-contacto>h1{
     text-align: center;
-    background-color: rgb(230, 100, 100);
+    justify-items: center;
     color: #fff;
 }
 
 .contedio-presentation{
     justify-content: center;
+    justify-items: center;
 
 }
 .subtitle{
@@ -160,11 +181,14 @@ a#id{
     align-items: center;
 }
 .about-card{
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-items: stretch;
+    justify-content: stretch;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     position: relative;
-    padding-left: 80px;
+    
 }
 
 .about__img{
@@ -251,7 +275,8 @@ a#id{
     justify-content: center;
     text-align: center;
     position: relative;
-    display: block;
+    display: flex;
+
   }
   
   .card{
@@ -329,3 +354,66 @@ a#id{
     -o-transform: scale(1.1);
     transform: scale(1.1);
   }
+  /*Galería*/
+.contenido-contacto> h2{
+    font-size: xx-large;
+    text-align: center;
+    justify-items: center;
+    color: #fff;
+}
+.gallery{
+
+        width: 175vmin;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        border: 10px solid #ffffff;
+        border-radius: 8px;
+        box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+}
+.wrapper{
+    width: 60%;
+    display: flex;
+    animation: slide 14s infinite;
+}
+
+img{
+    width: 60%;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(200%);
+    }
+    10%{
+        transform: translateX(200%);
+    }
+    20%{
+        transform: translateX(150%);
+    }
+    30%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(50%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    70%{
+        transform: translateX(-150%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    90%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
