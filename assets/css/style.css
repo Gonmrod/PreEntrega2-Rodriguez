@@ -383,7 +383,7 @@ a#id{
     width: 100vmin;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
+    top: 40%;
     left: 50%;
     overflow: hidden;
     border: 10px solid #ffffff;
@@ -514,4 +514,87 @@ img{
 
 .login-box a:hover {
   color: #fff;
+}
+
+/* Tarjetas comentario*/
+
+.html-tarjeta{
+  font-family: system-ui;
+}
+.body-tarjeta{
+  margin: 2rem 0;
+  padding-top: 30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body-tarjeta>a{
+  text-decoration: none;
+}
+.wrap{
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.column-4{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.tarjeta-rest{
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 6px;
+  padding: -1rem .5rem;
+  display: flex;
+  align-items: end;
+}
+
+.wrap-text_tarjeta-rest{
+  color: #fff;
+  padding: .5rem;
+  border-radius: 6px;
+  background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+}
+.wrap-text_tarjeta-rest p{
+  color: #f2f2f2;
+}
+
+.cta-wrap_tarjeta-rest{
+  display: flex;
+  justify-content: space-between;
+}
+
+.precio_tarjeta-rest span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cta_tarjeta-rest{
+  background-color:#FFC300;
+  padding: .25rem 1rem;
+  border-radius: 4px;
+}
+
+.cta_tarjeta-rest a{
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width:1024px){
+  .column-4{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media (max-width:768px){
+  .column-4{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:480px){
+  .column-4{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
