@@ -141,6 +141,10 @@ a#id {
   justify-content: center;
   justify-items: center;
 }
+.contenido-presentation-tiempo{
+  background-color: rgb(230, 100, 100);
+  margin-bottom: -10px;
+}
 .subtitle {
   color: white;
   font-size: 2.5rem;
@@ -259,6 +263,10 @@ a#id {
 
 .pronostico {
   color: #fff;
+  justify-content: center;
+  display: flex;
+  margin-top: -10px;
+
 }
 .pronostico-info {
   position: relative;
@@ -280,12 +288,27 @@ a#id {
 }
 
 .map-responsive iframe {
-  top: 10%;
+  top: 1%;
   right: 25%;
-  height: 75%;
-  width: 50%;
+  height: 68vh;
+  width: 60vw;
   position: absolute;
+  padding-left: 10%;
+  
 }
+@media (max-width: 700px) {
+  .map-responsive iframe{
+    top: 5%;
+    right: 25%;
+    left: 10%;
+    height: 75vh;
+    width: 80vw;
+    position: absolute;
+    padding-left: 0%;
+    
+    }
+}
+
 /* Contactos*/
 .wrapper {
   width: 3000px;
